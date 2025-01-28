@@ -1,0 +1,106 @@
+.boutou-bg {
+  width: 22px;
+}
+
+.menu-burger {
+  background-color: black;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+}
+
+.menu-burger.active {
+  right: 0;
+}
+
+nav {
+  display: flex;
+  background-color: blue;
+}
+
+.icone-menu-bg {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+}
+
+.icone-menu-bg span {
+  height: 5px;
+  width: 100%;
+  background-color: aqua;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.icone-menu-bg span:nth-child(1) {
+  top: 25%;
+}
+
+.icone-menu-bg span:nth-child(3) {
+  top: 75%;
+}
+
+.icone-menu-bg.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icone-menu-bg.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.icone-menu-bg.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+body {
+  padding: 7px 15px;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 110%;
+}
+
+p {
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.page-accueil {
+  height: 844px;
+  position: relative;
+}
+
+.p-acceuil {
+  position: absolute;
+  bottom: 3rem;
+}/*# sourceMappingURL=style.css.map */
