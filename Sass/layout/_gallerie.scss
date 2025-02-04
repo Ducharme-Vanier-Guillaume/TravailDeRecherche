@@ -1,0 +1,38 @@
+.page-gallerie{
+    height: 844px;
+    position: relative;
+    margin-top: -2rem;
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+}
+
+.page-gallerie h2{
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+    font-size: 50px;
+    color: #ff0000;;
+}
+
+.galerie-mobile{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 840px;
+}
+
+.galerie-mobile img{
+    width: 77%;
+    height: auto;
+}
+
+.galerie-mobile img:nth-child(1){
+    padding-right: 3rem;
+}
+
+.galerie-mobile img:nth-child(3){
+    padding-right: 2rem;
+}
+
