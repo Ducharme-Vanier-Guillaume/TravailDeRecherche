@@ -285,4 +285,40 @@ p, a {
   margin-top: 30%;
   background-color: transparent;
   border: none;
+}
+
+.footer {
+  height: 844px;
+  position: relative;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer h2 {
+  font-size: 40px;
+  margin: 0.5rem;
+}
+
+.naviguer, .travail,
+.ressources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 2rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+
+.h1-footer {
+  font-size: 4rem;
+  bottom: auto;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
