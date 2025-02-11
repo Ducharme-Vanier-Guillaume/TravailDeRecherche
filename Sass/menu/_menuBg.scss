@@ -1,3 +1,10 @@
+//-------------------- VERSION MOBILE --------------//
+
+.menu-gauche,
+.menu-droit{
+    display: none;
+}
+
 .boutou-bg{
     width: 22px;
 }
@@ -109,4 +116,43 @@ ul span{
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     background-color: #f1f1f1;
+}
+
+//-------------------- VERSION DESKTOP --------------//
+
+@media screen and (min-width : 530px) {
+
+    .boutou-bg,
+    .menu-burger,
+    .nav-icon-menu-bg{
+        display: none;
+    }
+
+    .menu-droit,
+    .menu-gauche{
+        display: flex;
+                gap: 1rem;
+    }
+
+    .menu-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 1rem 0rem 1rem;
+    }
+
+    .menu-desktop h1{
+        font-size: clamp(1.813rem, 1.388rem + 1.236vw, 2.5rem);
+        position: relative;
+        right: 3%;
+    }
+
+    .menu-desktop a{
+        font-size: clamp(0.688rem, 0.379rem + 0.899vw, 1.188rem);
+        text-decoration: none;
+        color: black;
+    }
+
+    
 }

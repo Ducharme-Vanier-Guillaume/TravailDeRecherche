@@ -1,15 +1,22 @@
-
+//-------------------- VERSION MOBILE --------------//
 
 .page-accueil{
     height: 844px;
     position: relative;
     margin-top: -2rem;
     padding: 7px 15px;
-
 }
 
 .p-acceuil{
     position: absolute;
     bottom: 3rem;
+}
+
+//-------------------- VERSION DESKTOP --------------//
+
+@media screen and (min-width : 530px) {
+    .page-accueil{
+        height: 1024px;
+    }  
 }
 

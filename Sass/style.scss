@@ -1,10 +1,17 @@
-@import "menu/menuBg";
-
+//-------------------- DE BASE--------------//
 @import "base/texte";
 
+
+
+//-------------------- SECTION --------------//
 @import "layout/accueil";
 @import "layout/information";
 @import "layout/gallerie";
 @import "layout/video";
 
-@import "layout/footer"
+//-------------------- DIVISION --------------//
+@import "menu/menuBg";
+@import "layout/footer";
+
+//-------------------- PAGE --------------//
+@import "layout/contact";
