@@ -38,3 +38,50 @@
     padding-right: 2rem;
 }
 
+.galerie-desktop{
+    display: none;
+}
+
+//-------------------- VERSION DESKTOP --------------//
+
+@media screen and (min-width : 530px) {
+    .galerie-mobile{
+        display: none;
+    }
+
+    .page-gallerie {
+    height: 100vh;
+}
+
+    .galerie-desktop{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        width: 90vw;
+    }
+
+    .image1-2-3{
+        display: flex;
+    }
+
+    .image1-2-3 > img{
+        width: 10%;
+        height: fit-content;
+    }
+
+    .image1-2{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        gap: 1rem;
+    }
+    .galerie-desktop > img{
+        width: 30%;
+        height: fit-content;
+
+    }
+
+}
+

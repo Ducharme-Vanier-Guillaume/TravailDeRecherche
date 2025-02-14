@@ -16,7 +16,19 @@
 
 @media screen and (min-width : 530px) {
     .page-accueil{
-        height: 1024px;
+        height: 100vh;
     }  
+
+    .page-accueil h2{
+        width: 77vw;
+        font-size: clamp(4.5rem, 3.117rem + 4.176vw, 6.875rem);
+    }
+
+    .p-acceuil{
+        bottom: -1rem;
+        width: 68vw;
+        text-align: left;
+        font-size: clamp(1.063rem, 0.917rem + 0.44vw, 1.313rem);
+    }
 }
 
