@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,10 +23,12 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
-  <script src="https://kit.fontawesome.com/7652a5eaa8.js" crossorigin="anonymous"></script>
- 
 
+  <!--Pour les icones-->
+  <script src="https://kit.fontawesome.com/7652a5eaa8.js" crossorigin="anonymous"></script>
 </head>
+
+
 
 <body>
 
@@ -36,13 +39,13 @@
 
     <ul>
       <div class="ligne"></div>
-      <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">À PROPOS</a></span>
+      <span><a class="a-menuBg" href="#a-propos">À PROPOS</a></span>
       <div class="ligne"></div>
-      <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">GALERIE</a></span>
+      <span><a class="a-menuBg" href="#galerie">GALERIE</a></span>
       <div class="ligne"></div>
-      <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">VIDÉO</a></span>
+      <span><a class="a-menuBg" href="#video">VIDÉO</a></span>
       <div class="ligne"></div>
-      <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">CONTACT</a></span>
+      <span><a class="a-menuBg" href="contact.html">CONTACT</a></span>
       <div class="ligne"></div>
     </ul>
   </section>
@@ -60,17 +63,18 @@
     <section class="page-accueil">
       <div class="menu-desktop">
         <div class="menu-gauche">
-          <a href="">À PROPOS</a>
-          <a href="">GALERIE</a>
-          <a href="">VIDÉO</a>
+          <a href="#a-propos">À PROPOS</a>
+          <a href="#galerie">GALERIE</a>
+          <a href="#video">VIDÉO</a>
         </div>
+
         <h1>FAIRLADY</h1>
         
         <div class="menu-droit">
-          <span><a href="">NOUS REJOINDRE</a></span>
+          <span><a href="contact.html">NOUS REJOINDRE</a></span>
         </div>
-
       </div>
+
         <h2>Découvrez notre création de la liberté</h2>
 
         <p class="p-acceuil">Notre tout nouveau modèle, repensé pour répondre aux attentes de ceux 
@@ -80,88 +84,93 @@
 
      <!-------------------------- SECTION INFORMATION ------------------------>
 
-    <section class="page-information">
+    <section id="a-propos" class="page-information">
       <h2 class="h2-page-info">FAIRLADY Z REPENSÉE</h2>
+
       <p class="p-page-information"> Nous avons conçu ce véhicule pour réinventer le modèle Z en revenant à l’essentiel. 
         Avec un design épuré et sportif, il évoque la nostalgie de la belle époque des routes 
         sinueuses à la campagne.</p>
-        <div class="info-page-information">
-          <p>4 couleurs disponibles</p>
-          <p>À partir de 120 000$</p>
-          <p>473 cheveaux</p>
-          <p>0-100km/6s</p>
-        </div>
-      </section>
+
+      <div class="info-page-information">
+        <p>4 couleurs disponibles</p>
+        <p>À partir de 120 000$</p>
+        <p>473 cheveaux</p>
+        <p>0-100km/6s</p>
+      </div>
+    </section>
 
  <!-------------------------- SECTION GALLERIE ------------------------>
 
-    <section class="page-gallerie">
+    <section id="galerie" class="page-gallerie">
       <h2 class="h2-page-info">EXPLORER LA LIBERTÉ</h2>
+
       <div class="galerie-mobile">
-        <img src="Images/image1.jpg" alt="">
+        <img src="Images/image1.png" alt="">
         <img src="Images/image2.jpg" alt="">
-        <img src="Images/image3.jpg" alt="">
+        <img src="Images/image3.png" alt="">
       </div>
 
-      <div class="galerie-desktop">
-        
+      <div class="galerie-desktop"> 
             <div class="image1-2">
-                <img src="Images/image1.jpg" alt="">
-                <img src="Images/image3.jpg" alt="">
+                <img src="Images/image1.png" alt="">
+                <img src="Images/image3.png" alt="">
             </div>
+
             <img src="Images/image2.jpg" alt="">
-    
-        <img src="Images/image4.jpg" alt="">
-        <img src="Images/image5.jpg" alt="">
-        <img src="Images/image6.jpg" alt="">
-    </div>
-    </section>
+            <img src="Images/image4.png" alt="">
+            <img src="Images/image5.png" alt="">
+            <img src="Images/image6.png" alt="">
+      </div>
+  </section>
 
  <!-------------------------- SECTION VIDÉO ------------------------>
 
-    <section class="page-video">
+    <section id="video" class="page-video">
       <video class="video-grand" autoplay loop muted>
         <source src="Images/day 5.mp4" type="video/mp4">
       </video>
+
       <button class="button-video">
-        <img src="Images/BoutonVideo.png" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
       </button>
+
       <div class="div-petit-video">
-      <video class="video-petit" controls>
-        <source src="Images/day 5.mp4" type="video/mp4">
-      </video>
-      <button class="button-petit-video">
-        <img src="Images/BoutonVideo2.png" alt="">
-      </button>
+        <video class="video-petit" controls>
+          <source src="Images/day 5.mp4" type="video/mp4">
+        </video>
       </div>
     </section>
 
      <!-------------------------- FOOTER ------------------------>
 
     <section class="footer">
-      <div class="naviguer">
-        <h2>NAVIGUER</h2>
-        <span><a href="">À propos</a></span>
-        <span><a href="">Galerie</a></span>
-        <span><a href="">Vidéo</a></span>
+      <div class="info-footer">
+        <div class="naviguer">
+          <h2>NAVIGUER</h2>
+          <span><a href="#a-propos">À propos</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          <span><a href="#galerie">Galerie</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          <span><a href="#video">Vidéo</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+        </div>
+
+        <div class="travail">
+          <h2>RÉSEAUX</h2>
+          <span><a href="https://www.instagram.com/gium.s?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          <span><a href="https://www.youtube.com/@gium.s">Behance</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          <span><a href="https://www.behance.net/guillauducharm1">Youtube</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          <span><a href="https://www.linkedin.com/in/guillaume-ducharme-vanier/">Linkedin</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+        </div>
+
+        <div class="ressources">
+          <h2>RESSOURCES</h2>
+          <span><a href="https://sketchfab.com/3d-models/nissan-fairlady-z-s30240z-1978-0d9286ebb8cc426e993e1d398b874a34">Voiture 3D</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span> 
+        </div>
       </div>
 
-      <div class="travail">
-        <h2>TRAVAIL</h2>
-        <span><a href="">Youtube</a></span>
-        <span><a href="">Instagram</a></span>
-        <span><a href="">Behance</a></span>
-        <span><a href="">Linkedin</a></span>
-      </div>
-
-      <div class="ressources">
-        <h2>RESSOURCES</h2>
-        <span><a href="">Voiture 3D</a></span>
-      </div>
       <h1 class="h1-footer">FAIRLADY ONE OF A KIND</h1>
     </section>
      
 </body>
+
 
  <!-------------------------- JAVA SCRIPT ------------------------>
 <script src="script.js"></script>

@@ -1,4 +1,8 @@
 //-------------------- TEXTE DE BASE --------------//
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     font-size: xx-large;
     font-family: "Gloock", serif;
@@ -6,6 +10,7 @@ h1{
     font-style: normal;
     font-size: 48px;
     text-align: center;
+    color: var(--Couleur-Texte);
 }
 
 h2{
@@ -14,11 +19,13 @@ h2{
     font-style: normal;
     font-size: 60px;
     line-height: 110%;
+    color: var(--Couleur-Texte);
 }
 
 p,a{
     font-family: "hiragino-kaku-gothic-pron", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
+    font-size: 17px;
+    color: var(--Couleur-Texte);
 }

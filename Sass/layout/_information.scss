@@ -5,6 +5,8 @@
     position: relative;
     margin-top: -2rem;
     padding: 7px 15px;
+    background: url('../Images/InfoMobile.png') no-repeat center center;
+    background-size: cover;
 }
 
 .page-information h2{
@@ -15,7 +17,14 @@
     position: absolute;
     bottom: 2rem;
     line-height: 15px;
+    padding-bottom: 3rem;
 }
+
+.p-page-information{
+    top: 1rem;
+    position: relative;
+}
+
 
 //-------------------- VERSION DESKTOP --------------//
 
@@ -24,17 +33,30 @@
     .page-information{
         height: 100vh;
         margin-top: 0;
+        background: url('../Images/InfoDesktop.png') no-repeat center center;
+        background-size: cover;
     }
 
     .page-information h2{
         font-size: clamp(3.125rem, 1.669rem + 4.396vw, 5.625rem);
         width: 540px;
+        top: -1rem;
+        position: relative;
     }
 
     .p-page-information{
         font-size: clamp(1.063rem, 0.917rem + 0.44vw, 1.313rem);
-        width: 46vw;
+        width: 44ch;
         position: absolute;
-        right: 1rem;
+        right: 1%;
+        top: 30%;
+    }
+    
+    .info-page-information{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        flex-wrap: wrap;
+        padding-bottom: 0;
     }
 }

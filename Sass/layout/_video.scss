@@ -1,7 +1,7 @@
 //-------------------- VERSION MOBILE --------------//
 
 .page-video{
-    height: 844px;
+    height: 100vh;
     position: relative;
     width: 100vw;
     overflow: hidden;
@@ -9,6 +9,8 @@
     align-items: center;
     justify-content: center;
 }
+
+////// Grande Video //////
 
 .video-grand{
     position: absolute;
@@ -27,12 +29,24 @@
     filter: blur(30px);
 }
 
+////// Bouton //////
+
 .button-video{
     z-index: 20;
     position: relative;
     display: block;
     background-color: transparent;
     border: none;
+}
+
+.button-video svg{
+    width: 30%;
+    fill: var(--Couleur-Texte);
+    transition: 0.4s ease-in-out;
+}
+
+.button-video svg:hover{
+    width: 35%;
 }
 
 .button-video.active{
@@ -44,11 +58,7 @@
     filter: invert(1);
 }
 
-.button-petit-video img{
-    width: 20%;
-    filter: invert(1);
-}
-
+////// Petite Vidéo //////
 
 .div-petit-video{
     display: none;
@@ -80,10 +90,16 @@
     transform: translate(-50%, -50%); 
 }
 
-.button-petit-video{
-    position: absolute;
-    margin-top: 30%;
-    background-color: transparent;
-    border: none;
-    
+//-------------------- VERSION DESKTOP --------------//
+
+@media screen and (min-width : 530px) {
+    .video-petit{
+        position: absolute;
+        width: 76%;
+        min-width: 50%;
+    }
+
+    .button-petit-video{
+        margin-top: 22%;
+    }
 }

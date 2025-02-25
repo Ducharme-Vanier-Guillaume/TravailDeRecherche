@@ -1,41 +1,129 @@
+//-------------------- VERSION MOBILE --------------//
+
 .footer{
-    height: 844px;
+    height: fit-content;
     position: relative;
     padding: 0px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--Couleur-Fond);
+    overflow: hidden;
 }
+
+/////////// Genéral ///////
+.h1-footer,
+.info-footer{
+    filter: blur(0px);
+    transition: filter 0.5s ease-in-out;
+    width: 100%;
+    padding-bottom: 4rem;
+    margin-top: -1rem;
+}
+
+.h1-footer.active,
+.info-footer.active{
+    filter: blur(5px);
+}
+
+/////////// Liens ///////
 
 .footer h2{
-    font-size: 40px;
-    margin: 0.5rem;
+    font-size: 27px;
+    color: var(--Couleur-Footer);
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin: 0;
 }
 
-.naviguer, .travail
-, .ressources{
+.naviguer span,
+.travail span,
+.ressources span{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.naviguer, 
+.travail,
+.ressources{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .5rem;
-    padding-top: 2rem;
+    padding-top: 2rem;  
 }
 
 .footer a{
     text-decoration: none;
-    color: black;
-    font-size: 22px;
+    color: var(--Couleur-Footer);
+    font-size: 19px;
 }
+
+.naviguer svg,
+.travail svg,
+.ressources svg{
+    width: 15px;
+    fill: var(--Couleur-Footer);  
+}
+
+/////////// Gros titre ///////
 
 .h1-footer{
     font-size: 4rem;
-    bottom: auto;
-    position: relative;
+    color: var(--Couleur-Footer);
+    padding: 0;
+    margin: clamp(-2rem, -1vw, -.5rem) 1rem;
 }
+
+
+//-------------------- VERSION DESKTOP --------------//
 
 @media screen and (min-width : 530px) {
     
+    .info-footer{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 3rem 0rem;
+    }
 
-    
+    /////////// Liens ///////
+
+    .footer h2{
+        font-size: clamp(1.5rem, 1.431rem + 0.21vw, 1.688rem);
+        margin: 1rem 0rem;
+        padding: 0;
+    }
+
+    .footer a {
+        transition: 0.15s ease-in-out;
+        position: relative;
+    }
+
+    .footer a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--Couleur-Texte);
+        transition: 0.15s ease-in-out;
+      }
+      
+      .footer a:hover:after {
+        width: 100%;
+      }
+
+    /////////// Gros titre ///////
+
+       .h1-footer{
+        padding-top: 5rem;
+        font-size: clamp(2.438rem, -0.366rem + 8.156vw, 9.625rem);
+     }
 }

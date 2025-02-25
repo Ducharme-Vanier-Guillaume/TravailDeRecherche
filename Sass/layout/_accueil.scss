@@ -3,8 +3,10 @@
 .page-accueil{
     height: 844px;
     position: relative;
-    margin-top: -2rem;
+    margin-top: -4rem;
     padding: 7px 15px;
+    background: url('../Images/AccueilMobile.png') no-repeat center center;
+    background-size: cover;
 }
 
 .p-acceuil{
@@ -15,20 +17,23 @@
 //-------------------- VERSION DESKTOP --------------//
 
 @media screen and (min-width : 530px) {
+
     .page-accueil{
         height: 100vh;
+        background: url('../Images/AccueilDesktop.png') no-repeat center center;
+        background-size: cover;
+        margin-top: 0;
     }  
 
     .page-accueil h2{
-        width: 77vw;
-        font-size: clamp(4.5rem, 3.117rem + 4.176vw, 6.875rem);
+        width: 13ch;
+        font-size: clamp(3.8rem, 2.117rem + 4.176vw, 6.875rem);
     }
 
     .p-acceuil{
-        bottom: -1rem;
-        width: 68vw;
+        width: 51ch;
         text-align: left;
-        font-size: clamp(1.063rem, 0.917rem + 0.44vw, 1.313rem);
+        font-size: clamp(.4rem, 0.8rem + 0.44vw, 1.6rem);
     }
 }
 

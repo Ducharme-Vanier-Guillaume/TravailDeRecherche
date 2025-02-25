@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Fairlady Contact</title>
 
     <link rel="stylesheet" href="Sass/style.css">
     <link rel="stylesheet" href="CSS/normalize.css">
@@ -13,21 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
 
 </head>
+
+
 <body>
 
+    <!-------------------------- MENU BURGER ------------------------>
     <div class="menu-burger">
         <h1 class="h1-menuBg">NOS PAGES</h1>
+
         <p class="p-menuBg">Tout ce dont vous avez besoin</p>
     
         <ul>
           <div class="ligne"></div>
-          <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">À PROPOS</a></span>
+          <span><a class="a-menuBg" href="index.html#a-propos">À PROPOS</a></span>
           <div class="ligne"></div>
-          <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">GALERIE</a></span>
+          <span><a class="a-menuBg" href="index.html#galerie">GALERIE</a></span>
           <div class="ligne"></div>
-          <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">VIDÉO</a></span>
+          <span><a class="a-menuBg" href="index.html#video">VIDÉO</a></span>
           <div class="ligne"></div>
-          <span><a class="a-menuBg" href="https://www.youtube.com/watch?v=luMu2WDP678&ab_channel=ThisFrontendGuy">CONTACT</a></span>
+          <span><a class="a-menuBg" href="index.html">RETOUR</a></span>
           <div class="ligne"></div>
         </ul>
       </div>
@@ -40,34 +45,82 @@
         </div>
       </nav>
 
-      <div class="page-contact">
+      <!-------------------------- MENU DESKTOP ------------------------>
+      <div class="menu-desktop-contact">
+        <div class="menu-gauche">
+          <a href="index.html#a-propos">À PROPOS</a>
+          <a href="index.html#galerie">GALERIE</a>
+          <a href="index.html#video">VIDÉO</a>
+        </div>
+
+        <h1>FAIRLADY</h1>
+        
+        <div class="menu-droit">
+          <span><a href="index.html">RETOUR</a></span>
+        </div>
+      </div>
+
+      <!-------------------------- SECTION CONTACT  ------------------------>
+      <section class="page-contact">
         <h1>LAISSEZ NOUS SAVOIR</h1>
+
         <div class="contact-info">
             <form class="form-contact">
-           
-              <div class="inputBox">
-                <input type="text" name="Prénom" required="required" value="Votre Nom*">
-              </div>
-              <div class="inputBox">
-                <input type="text" name="Nom" required="required" value="Votre Courriel*">
-              </div>
-              <div class="inputBox">
-                <input type="text" name="Téléphone" required="required" value="Votre Numéro*">
-              </div>
-              <div class="inputBox">
-                <input type="text" name="Téléphone" required="required" value="Votre Message*">
-              </div>
-              
-              <div class="inputBox-bouton">
-                <input type="submit" class="form-bouton" value="Envoyer">
-            </div>
-          
+              <div class="inputBox-div">
+                  <div class="inputBox">
+                    <input type="text" name="Prénom" required="required" value="Votre Nom*" onfocus="clearPlaceholder(this)">
+                  </div>
+
+                  <div class="inputBox">
+                    <input type="text" name="Nom" required="required" value="Votre Courriel*" onfocus="clearPlaceholder(this)">
+                  </div>
+
+                  <div class="inputBox">
+                    <input type="text" name="Téléphone" required="required" value="Votre Numéro*" onfocus="clearPlaceholder(this)">
+                  </div>
+
+                  <div class="inputBox">
+                    <input type="text" name="Téléphone" required="required" value="Votre Message*" onfocus="clearPlaceholder(this)">
+                  </div>
+                </div>
+
+                <div class="inputBox-bouton">
+                  <input type="submit" class="form-bouton" value="Envoyer">
+                </div>
             </form>
           </div>
-      </div>
+      </section>
       
-    
-</body>
+   <!--------------------------  FOOTER  ------------------------>
+      <section class="footer">
+        <div class="info-footer">
+          <div class="naviguer">
+            <h2>NAVIGUER</h2>
+            <span><a href="index.html#a-propos">À propos</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+            <span><a href="index.html#galerie">Galerie</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+            <span><a href="index.html#video">Vidéo</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+  
+          <div class="travail">
+            <h2>RÉSEAUX</h2>
+            <span><a href="https://www.instagram.com/gium.s?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+            <span><a href="https://www.youtube.com/@gium.s">Behance</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+            <span><a href="https://www.behance.net/guillauducharm1">Youtube</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+            <span><a href="https://www.linkedin.com/in/guillaume-ducharme-vanier/">Linkedin</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+  
+          <div class="ressources">
+            <h2>RESSOURCES</h2>
+            <span><a href="https://sketchfab.com/3d-models/nissan-fairlady-z-s30240z-1978-0d9286ebb8cc426e993e1d398b874a34">Voiture 3D</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+        </div>
 
+        <h1 class="h1-footer">FAIRLADY ONE OF A KIND</h1>
+      </section>
+   
+      
+</body>
+ <!-------------------------- JAVA SCRIPT ------------------------>
 <script src="script.js"></script>
+
 </html>

@@ -1,18 +1,32 @@
+//-------------------- VERSION MOBILE --------------//
+
 .page-contact{
-    background-color: #232221;
+    background-color: var(--Couleur-Fond);
     min-height: 100vh;
+    margin-top: -5rem;
 }
+
+.page-contact h1{
+    font-size: 4rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: 7rem;
+    margin: 0;
+    width: 4ch;
+}
+
+//Formulaire
 
 input[type="text"] {
     font-family: "hiragino-kaku-gothic-pron", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 16px;
-    color: white;
+    color: var(--Couleur-Texte);
 }
 
 .contact-info{
-margin-left: 2rem;
+margin-left: 1rem;
 margin-right: 2rem;
 text-align: left;
 }
@@ -28,10 +42,10 @@ text-align: left;
 
 .inputBox span,
 .span-texte{
-font-family: "greycliff-cf", sans-serif;
-font-weight: 400;
-font-style: normal;
-color: rgb(255, 255, 255);
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Couleur-Texte);
 }
 
 .inputBox input,
@@ -41,7 +55,7 @@ color: rgb(255, 255, 255);
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: solid 1.4px rgb(255, 255, 255);
+    border-bottom: solid 1.4px var(--Couleur-Texte);
     outline: none;
     background-color: transparent;
     resize: none;
@@ -53,28 +67,73 @@ color: rgb(255, 255, 255);
     font-size: 16px;
     margin: 10px 0;
     outline: none;
-    background-color: transparent;
     resize: none;
     border: 1px solid;
     width: fit-content;
-    margin-top: -2rem;
+    margin-top: -1rem;
     position: absolute;
     right: 0;
     margin-right: 2rem;
     border-radius: 7px;
-    border: 1px solid rgb(255, 255, 255);
-    background: rgb(255, 255, 255);
-    font-family: "greycliff-cf", sans-serif;
-    font-weight: 400;
+    border: 1px solid var(--Couleur-Texte);
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    font-weight: 300;
     font-style: normal;
 }
 
 .form-bouton{
     border: none;
     padding: .2rem;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background: transparent;
+    color: var(--Couleur-Texte);
     font-size: 15px;
 }
 
+//-------------------- VERSION DESKTOP --------------//
+
+@media screen and (min-width : 530px) {
+
+    .page-contact h1{
+        font-size: clamp(4.5rem, 3.573rem + 2.797vw, 7rem);
+        width: 11ch;
+        margin-top: -7rem;
+        padding-bottom: 2rem;
+        padding-top: 9rem;
+    }
+
+    .inputBox-div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    .inputBox{
+        padding-bottom: 10rem;
+        width: 46%;
+    }
+
+    .inputBox-bouton{
+        position: relative;
+        margin-top: -4rem; 
+    }
+    
+    .inputBox-bouton input{
+        transition: 0.3s ease-in-out;
+    }
+
+    .inputBox-bouton input:hover{
+        font-size: 18px;
+    }
+
+    .menu-desktop-contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem 0rem 2rem;
+        margin-top: 0rem;
+    }
+}
 
